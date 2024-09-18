@@ -1,0 +1,13 @@
+{
+	"domain": "SMrtd",
+	"name": "Sequent Microsystems RTD Data Acquisition Integration",
+	"version": "1.0.0",
+	"integration_type": "device",
+	"documentation": "https://github.com/SequentMicrosystems/SMrtd-ha",
+	"issue_tracker": "https://github.com/SequentMicrosystems/SMrtd-ha",
+	"dependencies": [],
+	"after_dependencies": [],
+	"codeownders": ["3lv"],
+	"config_flow": false,
+	"requirements": ["SMrtd>=1.0.0"]
+}
