@@ -1,3 +1,6 @@
+FULL_NAME = "RTD Data Acquisition"
+LINK = "https://sequentmicrosystems.com/products/rtd-data-acquisition-card-for-rpi"
+
 import librtd
 API = librtd
 DOMAIN = "SMrtd"

@@ -99,3 +99,36 @@ SMrtd:
     - stack: 2
     - stack: 3
 ```
+
+- Only specific entities for different stack levels:
+
+```yaml
+SMrtd:
+    - stack: 0
+      relay_1:
+      relay_3:
+      opto_1:
+        update_interval: 0.1
+    - stack: 2
+      relay:
+        chan_range: "1..8"
+      opto_cnt:
+        chan_range: "2..6"
+        update_interval: 1
+```
+
+[//]: # (__CUSTOM_README__ START)
+[//]: # (__CUSTOM_README__ END)
+
+### `configuration.yaml` entities
+
+Possible entities:
+```
+poly5_1: -> poly5_8:  (type: sensor)
+res_1: -> res_8:  (type: sensor)
+rtd_1: -> rtd_8:  (type: sensor)
+```
+
+Entity options:
+- `chan_range: "start..end"` (specify inclusive channel range)
+- `update_interval: seconds` (specify the update interval for `sensor` and `binary_sensor`, default 30s)
